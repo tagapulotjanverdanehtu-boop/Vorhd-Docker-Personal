@@ -19,9 +19,9 @@ RUN rm -rf /var/lib/apt/lists/*
 # download + extract Nitrox Linux release
 RUN set -eux; \
     if [ "$TARGETARCH" = "arm64" ]; then \
-        curl -fL -o /tmp/nitrox.zip "https://github.com/SubnauticaNitrox/Nitrox/releases/download/${NITROX_VERSION}/Nitrox_${NITROX_VERSION}_linux_arm64.zip"; \
+        curl -fL -o /tmp/nitrox.zip "https://github.com/Papela/Nitrox-Cracked-Mod/releases/download/${NITROX_VERSION}/Nitrox_${NITROX_VERSION}_linux_arm64.zip"; \
     elif [ "$TARGETARCH" = "amd64" ]; then \
-        curl -fL -o /tmp/nitrox.zip "https://github.com/SubnauticaNitrox/Nitrox/releases/download/${NITROX_VERSION}/Nitrox_${NITROX_VERSION}_linux_x64.zip"; \
+        curl -fL -o /tmp/nitrox.zip "https://github.com/Papela/Nitrox-Cracked-Mod/releases/download/${NITROX_VERSION}/Nitrox_${NITROX_VERSION}_linux_x64.zip"; \
     else \
         echo "Unsupported architecture: $TARGETARCH" && exit 1; \
     fi
